@@ -24,3 +24,6 @@
 img{
     width: 100%;
 }
+.alert-danger{
+    color: #FFF;
+}
