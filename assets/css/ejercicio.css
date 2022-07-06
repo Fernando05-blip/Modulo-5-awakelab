@@ -1,0 +1,44 @@
+.left, .right {
+    float: left;
+    width: 20%; /* El ancho de 20%, por defecto */
+    }
+    .main {
+    float: left;
+    width: 60%; /* El ancho es 60%, por defecto */
+    }
+
+    .left{
+        /* background-color: burlywood; */
+        /* width: 10%; */
+        display: block;
+    }
+    .right{
+        background-color: chocolate;
+        /* width: 30%; */
+        float: left;
+    }
+    .main{
+        background-color: cadetblue;
+    }
+    .fluid{
+        max-width:100%;
+        height: auto;
+    }
+    body{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+       
+    /* Use un “media query” para agregar un punto de quiebre a los
+    800px de ancho de la ventana: */
+    @media screen and (max-width: 800px) {
+        .left, .main, .right {
+        width: 100%; /* El ancho es 100%, cuando el contenedor es de
+        800px o menor. */
+        }
+        .left{
+            display: none;
+        }
+        }
